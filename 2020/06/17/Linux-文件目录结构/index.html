@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>Linux-文件目录结构 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Linux-文件目录结构Bin：binary 含义是二进制；该目录中存储的都是二进制文件，文件可以被运行。Dev：该目录中存放的都是外接设备，例如硬盘，光盘。在其中的外接设备是不能直接被使用的，需要挂载。系统需要给这个盘去分配一个盘符，没有盘符是打不开的，Linux默认丢到dev中，没有分配盘符，需要自己分配盘符，这种操做叫做挂载。Mnt：当外接设备需要挂载的时候，就需要挂载到mnt目录下。（当你">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux-文件目录结构">
+<meta property="og:url" content="http://yoursite.com/2020/06/17/Linux-%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Linux-文件目录结构Bin：binary 含义是二进制；该目录中存储的都是二进制文件，文件可以被运行。Dev：该目录中存放的都是外接设备，例如硬盘，光盘。在其中的外接设备是不能直接被使用的，需要挂载。系统需要给这个盘去分配一个盘符，没有盘符是打不开的，Linux默认丢到dev中，没有分配盘符，需要自己分配盘符，这种操做叫做挂载。Mnt：当外接设备需要挂载的时候，就需要挂载到mnt目录下。（当你">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-17T12:25:02.416Z">
+<meta property="article:modified_time" content="2020-06-17T12:34:37.288Z">
 <meta property="article:author" content="Sun Yang">
 <meta name="twitter:card" content="summary">
   
@@ -150,85 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Linux-命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Linux-文件目录结构" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/17/Linux-%E5%91%BD%E4%BB%A4/">Linux-命令</a>
-    </h1>
-  
-
-        
-        <a href="/2020/06/17/Linux-%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2020-06-17T12:28:15.700Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="基础命令："><a href="#基础命令：" class="headerlink" title="基础命令："></a>基础命令：</h1><h5 id="表示当前用户的根目录"><a href="#表示当前用户的根目录" class="headerlink" title="#~ 表示当前用户的根目录"></a>#~ 表示当前用户的根目录</h5><h5 id="ls-；列出当前目录下的文档"><a href="#ls-；列出当前目录下的文档" class="headerlink" title="#ls ；列出当前目录下的文档"></a>#ls ；列出当前目录下的文档</h5><h5 id="ls-路径-；-当前目录-上一级目录、"><a href="#ls-路径-；-当前目录-上一级目录、" class="headerlink" title="#ls 路径 ； ./当前目录 ../上一级目录、"></a>#ls 路径 ； ./当前目录 ../上一级目录、</h5><h5 id="ls-l-路径-；list-表示已详细列表的形式显示"><a href="#ls-l-路径-；list-表示已详细列表的形式显示" class="headerlink" title="#ls -l 路径 ；list 表示已详细列表的形式显示"></a>#ls -l 路径 ；list 表示已详细列表的形式显示</h5><h5 id="ls-la-路径-；-all-表示显示所有文件文件夹包括隐藏文件夹"><a href="#ls-la-路径-；-all-表示显示所有文件文件夹包括隐藏文件夹" class="headerlink" title="#ls -la 路径 ； all 表示显示所有文件文件夹包括隐藏文件夹"></a>#ls -la 路径 ； all 表示显示所有文件文件夹包括隐藏文件夹</h5><h5 id="ls-lah-路径-；high-以可读性更高的形式显示-带k-M-G-显示的-代表文件-d代表文件夹-蓝色表示文件夹-黑色表示文件-绿色的表示其权限为所有权"><a href="#ls-lah-路径-；high-以可读性更高的形式显示-带k-M-G-显示的-代表文件-d代表文件夹-蓝色表示文件夹-黑色表示文件-绿色的表示其权限为所有权" class="headerlink" title="#ls -lah 路径 ；high 以可读性更高的形式显示 带k M G 显示的-代表文件 d代表文件夹 蓝色表示文件夹 黑色表示文件 绿色的表示其权限为所有权"></a>#ls -lah 路径 ；high 以可读性更高的形式显示 带k M G 显示的-代表文件 d代表文件夹 蓝色表示文件夹 黑色表示文件 绿色的表示其权限为所有权</h5><h5 id="pwd-；-print-work-directory-打印当前工作目录"><a href="#pwd-；-print-work-directory-打印当前工作目录" class="headerlink" title="#pwd ；(print work directory 打印当前工作目录)"></a>#pwd ；(print work directory 打印当前工作目录)</h5><h5 id="cd-路径-；-change-directory-切换当前工作目录-cd-；切换到当前用户的家目录"><a href="#cd-路径-；-change-directory-切换当前工作目录-cd-；切换到当前用户的家目录" class="headerlink" title="#cd 路径 ；(change directory 切换当前工作目录 )#cd ~ ；切换到当前用户的家目录"></a>#cd 路径 ；(change directory 切换当前工作目录 )#cd ~ ；切换到当前用户的家目录</h5><h5 id="mkdir-路径；（可以是文件夹名称-也可以是包含名称的文件夹）-make-directory-创建目录）-mkdir-p-路径-创建多层文件夹-mkdir-路径1-路径2-路径3-一次性创建多个文件夹"><a href="#mkdir-路径；（可以是文件夹名称-也可以是包含名称的文件夹）-make-directory-创建目录）-mkdir-p-路径-创建多层文件夹-mkdir-路径1-路径2-路径3-一次性创建多个文件夹" class="headerlink" title="#mkdir 路径；（可以是文件夹名称 也可以是包含名称的文件夹）(make directory 创建目录） ##### #mkdir -p 路径 创建多层文件夹#mkdir 路径1 路径2 路径3 一次性创建多个文件夹"></a>#mkdir 路径；（可以是文件夹名称 也可以是包含名称的文件夹）(make directory 创建目录） ##### #mkdir -p 路径 创建多层文件夹#mkdir 路径1 路径2 路径3 一次性创建多个文件夹</h5><h5 id="touch-路径-；（创建文件）（路径可以是直接的文件名-也可以是包含文件名的路径）-touch-路径1-路径2-路径3-同时创建多个文件"><a href="#touch-路径-；（创建文件）（路径可以是直接的文件名-也可以是包含文件名的路径）-touch-路径1-路径2-路径3-同时创建多个文件" class="headerlink" title="#touch 路径 ；（创建文件）（路径可以是直接的文件名 也可以是包含文件名的路径）#touch 路径1 路径2 路径3 同时创建多个文件"></a>#touch 路径 ；（创建文件）（路径可以是直接的文件名 也可以是包含文件名的路径）#touch 路径1 路径2 路径3 同时创建多个文件</h5><h5 id="cp-被复制的文档路径-文档复制到的位置-；（copy-复制）复制文件-文件夹到指定位置，文档包括文件和文件夹。注：复制过程中可以改名字。"><a href="#cp-被复制的文档路径-文档复制到的位置-；（copy-复制）复制文件-文件夹到指定位置，文档包括文件和文件夹。注：复制过程中可以改名字。" class="headerlink" title="#cp 被复制的文档路径 文档复制到的位置 ；（copy 复制）复制文件/文件夹到指定位置，文档包括文件和文件夹。注：复制过程中可以改名字。"></a>#cp 被复制的文档路径 文档复制到的位置 ；（copy 复制）复制文件/文件夹到指定位置，文档包括文件和文件夹。注：复制过程中可以改名字。</h5><h5 id="cp-r-复制文件夹-被复制的文档路径-文档复制到的位置；（-r-递归-逐级复制）"><a href="#cp-r-复制文件夹-被复制的文档路径-文档复制到的位置；（-r-递归-逐级复制）" class="headerlink" title="#cp -r 复制文件夹 被复制的文档路径 文档复制到的位置；（-r 递归 逐级复制）"></a>#cp -r 复制文件夹 被复制的文档路径 文档复制到的位置；（-r 递归 逐级复制）</h5><h5 id="mv-需要移动的文档路径-需要移动到的位置路径；（move-移动-剪切）"><a href="#mv-需要移动的文档路径-需要移动到的位置路径；（move-移动-剪切）" class="headerlink" title="#mv 需要移动的文档路径 需要移动到的位置路径；（move 移动 剪切）"></a>#mv 需要移动的文档路径 需要移动到的位置路径；（move 移动 剪切）</h5><h5 id="rm-选项-需要移除的文档（文件）路径；-（remove-移除-删除）此删除方法需要输入y确认"><a href="#rm-选项-需要移除的文档（文件）路径；-（remove-移除-删除）此删除方法需要输入y确认" class="headerlink" title="#rm 选项 需要移除的文档（文件）路径； （remove 移除 删除）此删除方法需要输入y确认"></a>#rm 选项 需要移除的文档（文件）路径； （remove 移除 删除）此删除方法需要输入y确认</h5><h5 id="rm-f-强制删除不需要输入y确认"><a href="#rm-f-强制删除不需要输入y确认" class="headerlink" title="#rm -f 强制删除不需要输入y确认"></a>#rm -f 强制删除不需要输入y确认</h5><h5 id="rm-rf-路径-删除文件夹-递归删除-也可同时删除多个文件。删除同一类-例如：chuangjian-通配符"><a href="#rm-rf-路径-删除文件夹-递归删除-也可同时删除多个文件。删除同一类-例如：chuangjian-通配符" class="headerlink" title="#rm -rf 路径 删除文件夹 递归删除 也可同时删除多个文件。删除同一类 例如：chuangjian* *通配符"></a>#rm -rf 路径 删除文件夹 递归删除 也可同时删除多个文件。删除同一类 例如：chuangjian* *通配符</h5><h5 id="vim-文件的路径；打开一个文件（只能看见该文件内的内容，看不见之前的终端命令等）-vim是一个文本编辑器）-退出按-shift-然后输入q。（只想查看，不想进入编辑则使用cat。编辑需使用vim。）-关键词-高亮显示。"><a href="#vim-文件的路径；打开一个文件（只能看见该文件内的内容，看不见之前的终端命令等）-vim是一个文本编辑器）-退出按-shift-然后输入q。（只想查看，不想进入编辑则使用cat。编辑需使用vim。）-关键词-高亮显示。" class="headerlink" title="#vim 文件的路径；打开一个文件（只能看见该文件内的内容，看不见之前的终端命令等） (vim是一个文本编辑器） 退出按 shift+: 然后输入q。（只想查看，不想进入编辑则使用cat。编辑需使用vim。）;/ 关键词 高亮显示。"></a>#vim 文件的路径；打开一个文件（只能看见该文件内的内容，看不见之前的终端命令等） (vim是一个文本编辑器） 退出按 shift+: 然后输入q。（只想查看，不想进入编辑则使用cat。编辑需使用vim。）;/ 关键词 高亮显示。</h5><h5 id="输出重定向：（一般的命令都会显示在终端中，有时候需要将一些命令的执行结果保存到文件中，进行后续的分析、统计、这时候就需要用到输出重定向。）-gt-覆盖输出，会覆盖掉原先的文件内容。例如：保存ls-lah的执行结果，保存到当前目录下的ls-txt中。文件可以不存在，如果不存在，会自动新建。-gt-gt-追加输出，不会覆盖原始文件内容，会在原始内容末尾继续添加。语法：-正常指令-gt-或-gt-gt-文件路径"><a href="#输出重定向：（一般的命令都会显示在终端中，有时候需要将一些命令的执行结果保存到文件中，进行后续的分析、统计、这时候就需要用到输出重定向。）-gt-覆盖输出，会覆盖掉原先的文件内容。例如：保存ls-lah的执行结果，保存到当前目录下的ls-txt中。文件可以不存在，如果不存在，会自动新建。-gt-gt-追加输出，不会覆盖原始文件内容，会在原始内容末尾继续添加。语法：-正常指令-gt-或-gt-gt-文件路径" class="headerlink" title="输出重定向：（一般的命令都会显示在终端中，有时候需要将一些命令的执行结果保存到文件中，进行后续的分析、统计、这时候就需要用到输出重定向。）&gt; 覆盖输出，会覆盖掉原先的文件内容。例如：保存ls -lah的执行结果，保存到当前目录下的ls.txt中。文件可以不存在，如果不存在，会自动新建。&gt;&gt; 追加输出，不会覆盖原始文件内容，会在原始内容末尾继续添加。语法：#正常指令 &gt;或&gt;&gt; 文件路径"></a>输出重定向：（一般的命令都会显示在终端中，有时候需要将一些命令的执行结果保存到文件中，进行后续的分析、统计、这时候就需要用到输出重定向。）&gt; 覆盖输出，会覆盖掉原先的文件内容。例如：保存ls -lah的执行结果，保存到当前目录下的ls.txt中。文件可以不存在，如果不存在，会自动新建。&gt;&gt; 追加输出，不会覆盖原始文件内容，会在原始内容末尾继续添加。语法：#正常指令 &gt;或&gt;&gt; 文件路径</h5><h5 id="cat-文件路径-；有直接打开文件的功能，不需要退出。只想查看，不想进入编辑则使用cat。编辑需使用vim。"><a href="#cat-文件路径-；有直接打开文件的功能，不需要退出。只想查看，不想进入编辑则使用cat。编辑需使用vim。" class="headerlink" title="#cat 文件路径 ；有直接打开文件的功能，不需要退出。只想查看，不想进入编辑则使用cat。编辑需使用vim。"></a>#cat 文件路径 ；有直接打开文件的功能，不需要退出。只想查看，不想进入编辑则使用cat。编辑需使用vim。</h5><h5 id="cat-待合并的文件路径1-待合并的文件路径2-待合并的文件路径3……-文件路径N-gt-输出重定向）或-gt-gt-合并之后的文件路径。-配合输出重定向使用。"><a href="#cat-待合并的文件路径1-待合并的文件路径2-待合并的文件路径3……-文件路径N-gt-输出重定向）或-gt-gt-合并之后的文件路径。-配合输出重定向使用。" class="headerlink" title="#cat 待合并的文件路径1 待合并的文件路径2 待合并的文件路径3……. 文件路径N &gt;(输出重定向）或&gt;&gt; 合并之后的文件路径。 配合输出重定向使用。"></a>#cat 待合并的文件路径1 待合并的文件路径2 待合并的文件路径3……. 文件路径N &gt;(输出重定向）或&gt;&gt; 合并之后的文件路径。 配合输出重定向使用。</h5><hr>
-<h1 id="进阶命令："><a href="#进阶命令：" class="headerlink" title="进阶命令："></a>进阶命令：</h1><h5 id="df-（Disk-Free-查看磁盘空间）；"><a href="#df-（Disk-Free-查看磁盘空间）；" class="headerlink" title="#df  （Disk Free  查看磁盘空间）；"></a>#df  （Disk Free  查看磁盘空间）；</h5><h5 id="df-h-表示一较高可读性显示-M-G"><a href="#df-h-表示一较高可读性显示-M-G" class="headerlink" title="#df -h 表示一较高可读性显示 M G ;"></a>#df -h 表示一较高可读性显示 M G ;</h5><p><img src="C:%5CUsers%5CSunYang%5CAppData%5CLocal%5CTemp%5CImage.png" alt="Image"></p>
-<h5 id="Filessystem-分区；Size-大小；Used：被使用的；Avail：可用的；Use-：已使用的百分比；Mounted-on：挂载点：例如：windows中插入了一个硬盘，那么系统就会给他分配一个盘符，但是linux-不会自动分配，而且Linux一切皆文件，他需要把系统设备挂载到地方去-dev-shm-访问文件夹。-dev-sro-光盘；第一个是硬盘；tmpfs和dev-sda1-系统占的分区；"><a href="#Filessystem-分区；Size-大小；Used：被使用的；Avail：可用的；Use-：已使用的百分比；Mounted-on：挂载点：例如：windows中插入了一个硬盘，那么系统就会给他分配一个盘符，但是linux-不会自动分配，而且Linux一切皆文件，他需要把系统设备挂载到地方去-dev-shm-访问文件夹。-dev-sro-光盘；第一个是硬盘；tmpfs和dev-sda1-系统占的分区；" class="headerlink" title="Filessystem: 分区；Size : 大小；Used：被使用的；Avail：可用的；Use%：已使用的百分比；Mounted on：挂载点：例如：windows中插入了一个硬盘，那么系统就会给他分配一个盘符，但是linux 不会自动分配，而且Linux一切皆文件，他需要把系统设备挂载到地方去 /   /dev/shm 访问文件夹。/dev/sro 光盘；第一个是硬盘；tmpfs和dev/sda1: 系统占的分区；"></a>Filessystem: 分区；Size : 大小；Used：被使用的；Avail：可用的；Use%：已使用的百分比；Mounted on：挂载点：例如：windows中插入了一个硬盘，那么系统就会给他分配一个盘符，但是linux 不会自动分配，而且Linux一切皆文件，他需要把系统设备挂载到地方去 /   /dev/shm 访问文件夹。/dev/sro 光盘；第一个是硬盘；tmpfs和dev/sda1: 系统占的分区；</h5><h5 id="free-表示查看内存使用情况；"><a href="#free-表示查看内存使用情况；" class="headerlink" title="#free 表示查看内存使用情况；"></a>#free 表示查看内存使用情况；</h5><h5 id="free-m-表示查看内存使用情况-并以单位为M显示；"><a href="#free-m-表示查看内存使用情况-并以单位为M显示；" class="headerlink" title="#free -m 表示查看内存使用情况 并以单位为M显示；"></a>#free -m 表示查看内存使用情况 并以单位为M显示；</h5><h5 id="free-g-表示产看内存使用情况-并以单位为G显示；"><a href="#free-g-表示产看内存使用情况-并以单位为G显示；" class="headerlink" title="#free -g  表示产看内存使用情况 并以单位为G显示；"></a>#free -g  表示产看内存使用情况 并以单位为G显示；</h5><p><img src="C:%5CUsers%5CSunYang%5CAppData%5CLocal%5CTemp%5CImage.png" alt="Image"></p>
-<h5 id="看第二排-的free-第一排里面有内存被系统分配了但没被使用的，系统预留的一些内存，应该算在剩余内存。"><a href="#看第二排-的free-第一排里面有内存被系统分配了但没被使用的，系统预留的一些内存，应该算在剩余内存。" class="headerlink" title="看第二排 的free 第一排里面有内存被系统分配了但没被使用的，系统预留的一些内存，应该算在剩余内存。"></a>看第二排 的free 第一排里面有内存被系统分配了但没被使用的，系统预留的一些内存，应该算在剩余内存。</h5><h5 id="buffers和-cached-已经被分配但是没被使用的-，表示输入和输出的内存。如果你想输入可以用buffers-的内存，如果你才想输出可以用-cached的内存。"><a href="#buffers和-cached-已经被分配但是没被使用的-，表示输入和输出的内存。如果你想输入可以用buffers-的内存，如果你才想输出可以用-cached的内存。" class="headerlink" title="buffers和 cached 已经被分配但是没被使用的 ，表示输入和输出的内存。如果你想输入可以用buffers 的内存，如果你才想输出可以用 cached的内存。"></a>buffers和 cached 已经被分配但是没被使用的 ，表示输入和输出的内存。如果你想输入可以用buffers 的内存，如果你才想输出可以用 cached的内存。</h5><h5 id="Swap表示交换的意思，当系统真实内存不够用了的时候，我们可以去使用硬盘来充当临时的内存；"><a href="#Swap表示交换的意思，当系统真实内存不够用了的时候，我们可以去使用硬盘来充当临时的内存；" class="headerlink" title="Swap表示交换的意思，当系统真实内存不够用了的时候，我们可以去使用硬盘来充当临时的内存；"></a>Swap表示交换的意思，当系统真实内存不够用了的时候，我们可以去使用硬盘来充当临时的内存；</h5><h5 id="head-n-文件路径-；查看一个文件的前多少（n）行。不写n默认前十行。"><a href="#head-n-文件路径-；查看一个文件的前多少（n）行。不写n默认前十行。" class="headerlink" title="#head -n 文件路径 ；查看一个文件的前多少（n）行。不写n默认前十行。"></a>#head -n 文件路径 ；查看一个文件的前多少（n）行。不写n默认前十行。</h5><h5 id="head-c-文件路径-；查看字节。"><a href="#head-c-文件路径-；查看字节。" class="headerlink" title="#head -c 文件路径 ；查看字节。"></a>#head -c 文件路径 ；查看字节。</h5><h5 id="tail-n-文件路径-；-查看一个文件的后n行。"><a href="#tail-n-文件路径-；-查看一个文件的后n行。" class="headerlink" title="#tail -n 文件路径 ； 查看一个文件的后n行。"></a>#tail -n 文件路径 ； 查看一个文件的后n行。</h5><h5 id="tail-f-文件路径-；-可以查看一个文件的动态变化。"><a href="#tail-f-文件路径-；-可以查看一个文件的动态变化。" class="headerlink" title="#tail -f  文件路径 ； 可以查看一个文件的动态变化。"></a>#tail -f  文件路径 ； 可以查看一个文件的动态变化。</h5><h5 id="less-需要查看的文件路径；查看文件，以较少的内容进行输出，（一个终端的整个屏幕）按下辅助功能键查看更多。辅助键可以是数字（表示显示多少行）；空格键-一页一页翻，上下键一行一行翻或者回车键。"><a href="#less-需要查看的文件路径；查看文件，以较少的内容进行输出，（一个终端的整个屏幕）按下辅助功能键查看更多。辅助键可以是数字（表示显示多少行）；空格键-一页一页翻，上下键一行一行翻或者回车键。" class="headerlink" title="#less 需要查看的文件路径；查看文件，以较少的内容进行输出，（一个终端的整个屏幕）按下辅助功能键查看更多。辅助键可以是数字（表示显示多少行）；空格键 一页一页翻，上下键一行一行翻或者回车键。"></a>#less 需要查看的文件路径；查看文件，以较少的内容进行输出，（一个终端的整个屏幕）按下辅助功能键查看更多。辅助键可以是数字（表示显示多少行）；空格键 一页一页翻，上下键一行一行翻或者回车键。</h5><h5 id="wc-路径-统计文件内容信息；"><a href="#wc-路径-统计文件内容信息；" class="headerlink" title="#wc 路径 统计文件内容信息；"></a>#wc 路径 统计文件内容信息；</h5><h5 id="wc-l-路径-统计文件行数；"><a href="#wc-l-路径-统计文件行数；" class="headerlink" title="#wc -l 路径 统计文件行数；"></a>#wc -l 路径 统计文件行数；</h5><h5 id="wc-w-路径-统计文件单词数；空格区分单词数"><a href="#wc-w-路径-统计文件单词数；空格区分单词数" class="headerlink" title="#wc -w 路径 统计文件单词数；空格区分单词数"></a>#wc -w 路径 统计文件单词数；空格区分单词数</h5><h5 id="wc-c-路径-文件字节数；"><a href="#wc-c-路径-文件字节数；" class="headerlink" title="#wc -c 路径 文件字节数；"></a>#wc -c 路径 文件字节数；</h5><h5 id="date-时间；-（读取和设置）-CST-当地时间。"><a href="#date-时间；-（读取和设置）-CST-当地时间。" class="headerlink" title="#date 时间； （读取和设置） CST 当地时间。"></a>#date 时间； （读取和设置） CST 当地时间。</h5><h5 id="date-F-（等价于-date-“-Y-m-d”年月日）-输出形式：2018-03-24-表示读取。"><a href="#date-F-（等价于-date-“-Y-m-d”年月日）-输出形式：2018-03-24-表示读取。" class="headerlink" title="#date +%F  （等价于#date “+%Y-%m-%d”年月日） 输出形式：2018-03-24. +表示读取。"></a>#date +%F  （等价于#date “+%Y-%m-%d”年月日） 输出形式：2018-03-24. +表示读取。</h5><h5 id="date-T-（等价于-date-“-H-M-S”-时分秒）-输出形式：15-23-16"><a href="#date-T-（等价于-date-“-H-M-S”-时分秒）-输出形式：15-23-16" class="headerlink" title="#date +%T （等价于#date “+%H:%M:%S” 时分秒） 输出形式：15:23:16"></a>#date +%T （等价于#date “+%H:%M:%S” 时分秒） 输出形式：15:23:16</h5><h5 id="date-“-F-T”输出形式2018-10-23-12-23-34"><a href="#date-“-F-T”输出形式2018-10-23-12-23-34" class="headerlink" title="#date “+%F  %T”输出形式2018-10-23 12:23:34."></a>#date “+%F  %T”输出形式2018-10-23 12:23:34.</h5><h5 id="date-d“-1day”-获取之前或之后某个时间点，用于备份）"><a href="#date-d“-1day”-获取之前或之后某个时间点，用于备份）" class="headerlink" title="#date    -d“-1day”(获取之前或之后某个时间点，用于备份）"></a>#date    -d“-1day”(获取之前或之后某个时间点，用于备份）</h5><h5 id="cal-或-cal-1-；直接输出当前月份的日历。（calendar）"><a href="#cal-或-cal-1-；直接输出当前月份的日历。（calendar）" class="headerlink" title="#cal 或#cal -1 ；直接输出当前月份的日历。（calendar）"></a>#cal 或#cal -1 ；直接输出当前月份的日历。（calendar）</h5><h5 id="cal-3-输出当月左右的3个日历。"><a href="#cal-3-输出当月左右的3个日历。" class="headerlink" title="#cal -3 输出当月左右的3个日历。"></a>#cal -3 输出当月左右的3个日历。</h5><h5 id="cal-y-输出当年的12个月份。"><a href="#cal-y-输出当年的12个月份。" class="headerlink" title="#cal -y 输出当年的12个月份。"></a>#cal -y 输出当年的12个月份。</h5><h5 id="cal-y-年份-输出年份的12个月份。"><a href="#cal-y-年份-输出年份的12个月份。" class="headerlink" title="#cal -y 年份 输出年份的12个月份。"></a>#cal -y 年份 输出年份的12个月份。</h5><h5 id="cal-m-输出的日历从周一开始（正常从周日开始）。"><a href="#cal-m-输出的日历从周一开始（正常从周日开始）。" class="headerlink" title="#cal -m 输出的日历从周一开始（正常从周日开始）。"></a>#cal -m 输出的日历从周一开始（正常从周日开始）。</h5><h5 id="cal-s-输出从周日开始。默认值。"><a href="#cal-s-输出从周日开始。默认值。" class="headerlink" title="#cal -s 输出从周日开始。默认值。"></a>#cal -s 输出从周日开始。默认值。</h5><h5 id="clear-ctrl-L-清屏；（只是向上移动了一个屏幕，并不是真实的删除。）"><a href="#clear-ctrl-L-清屏；（只是向上移动了一个屏幕，并不是真实的删除。）" class="headerlink" title="#clear/ctrl + L 清屏；（只是向上移动了一个屏幕，并不是真实的删除。）"></a>#clear/ctrl + L 清屏；（只是向上移动了一个屏幕，并不是真实的删除。）</h5><h5 id="管道符：可以用于“过滤；”“特殊”；“扩展处理”。"><a href="#管道符：可以用于“过滤；”“特殊”；“扩展处理”。" class="headerlink" title="#|  管道符：可以用于“过滤；”“特殊”；“扩展处理”。"></a>#|  管道符：可以用于“过滤；”“特殊”；“扩展处理”。</h5><h5 id="ls-grep-y；（-前面的输出是后面的输入。ls指令输出当前目录下的所有文档，然后作为管道的输入条件。）过滤：-通过管道查询出当前目录下；包含“y”字母的文档名称。"><a href="#ls-grep-y；（-前面的输出是后面的输入。ls指令输出当前目录下的所有文档，然后作为管道的输入条件。）过滤：-通过管道查询出当前目录下；包含“y”字母的文档名称。" class="headerlink" title="#ls  | grep y；（|前面的输出是后面的输入。ls指令输出当前目录下的所有文档，然后作为管道的输入条件。）过滤： 通过管道查询出当前目录下；包含“y”字母的文档名称。"></a>#ls  | grep y；（|前面的输出是后面的输入。ls指令输出当前目录下的所有文档，然后作为管道的输入条件。）过滤： 通过管道查询出当前目录下；包含“y”字母的文档名称。</h5><h5 id="cat-路径-less-通过管道实现less效果"><a href="#cat-路径-less-通过管道实现less效果" class="headerlink" title="#cat 路径 | less 通过管道实现less效果"></a>#cat 路径 | less 通过管道实现less效果</h5><h5 id="ls-路径-wc-l-扩展处理：统计某个目录下的文档的个数。"><a href="#ls-路径-wc-l-扩展处理：统计某个目录下的文档的个数。" class="headerlink" title="#ls 路径 | wc -l ;扩展处理：统计某个目录下的文档的个数。"></a>#ls 路径 | wc -l ;扩展处理：统计某个目录下的文档的个数。</h5><hr>
-<h1 id="高级命令："><a href="#高级命令：" class="headerlink" title="高级命令："></a>高级命令：</h1><h5 id="hostname-：获取操作服务器的完整主机名。（获取、设置主机名）"><a href="#hostname-：获取操作服务器的完整主机名。（获取、设置主机名）" class="headerlink" title="#hostname ：获取操作服务器的完整主机名。（获取、设置主机名）"></a>#hostname ：获取操作服务器的完整主机名。（获取、设置主机名）</h5><h5 id="hostname-f-获取输出当前主机名中的-FQDN（全限定域名-也叫主机域名）。"><a href="#hostname-f-获取输出当前主机名中的-FQDN（全限定域名-也叫主机域名）。" class="headerlink" title="#hostname -f 获取输出当前主机名中的 FQDN（全限定域名 也叫主机域名）。"></a>#hostname -f 获取输出当前主机名中的 FQDN（全限定域名 也叫主机域名）。</h5><h5 id="id-用户名；用于查看一个用户的基本信息（包含用户UID，用户组GID-附加组ID）默认当前用户。"><a href="#id-用户名；用于查看一个用户的基本信息（包含用户UID，用户组GID-附加组ID）默认当前用户。" class="headerlink" title="#id 用户名；用于查看一个用户的基本信息（包含用户UID，用户组GID 附加组ID）默认当前用户。"></a>#id 用户名；用于查看一个用户的基本信息（包含用户UID，用户组GID 附加组ID）默认当前用户。</h5><h5 id="验证上述信息是否正确？"><a href="#验证上述信息是否正确？" class="headerlink" title="验证上述信息是否正确？"></a>验证上述信息是否正确？</h5><h5 id="验证用户信息：-cat-etc-passwd-通过文件-etc-passwd"><a href="#验证用户信息：-cat-etc-passwd-通过文件-etc-passwd" class="headerlink" title="验证用户信息：#cat  /etc/passwd   通过文件/etc/passwd"></a>验证用户信息：#cat  /etc/passwd   通过文件/etc/passwd</h5><h5 id="验证用户组信息：-cat-etc-group-通过文件-etc-group"><a href="#验证用户组信息：-cat-etc-group-通过文件-etc-group" class="headerlink" title="验证用户组信息：#cat  /etc/group  通过文件/etc/group"></a>验证用户组信息：#cat  /etc/group  通过文件/etc/group</h5><h5 id="whoami-打印当前用户名（一般用于shell脚本，用于方便记录日志）"><a href="#whoami-打印当前用户名（一般用于shell脚本，用于方便记录日志）" class="headerlink" title="#whoami 打印当前用户名（一般用于shell脚本，用于方便记录日志）"></a>#whoami 打印当前用户名（一般用于shell脚本，用于方便记录日志）</h5><h5 id="ps-（process-state）查看当前服务器的进程信息"><a href="#ps-（process-state）查看当前服务器的进程信息" class="headerlink" title="#ps （process state）查看当前服务器的进程信息"></a>#ps （process state）查看当前服务器的进程信息</h5><h5 id="ps-e-等价于“-A”-列出户全部的进程，行。"><a href="#ps-e-等价于“-A”-列出户全部的进程，行。" class="headerlink" title="#ps -e 等价于“-A” 列出户全部的进程，行。"></a>#ps -e 等价于“-A” 列出户全部的进程，行。</h5><h5 id="ps-f-列出全部的列（全部的字段）。"><a href="#ps-f-列出全部的列（全部的字段）。" class="headerlink" title="#ps -f  列出全部的列（全部的字段）。"></a>#ps -f  列出全部的列（全部的字段）。</h5><h5 id="ps-ef（常用指令）。"><a href="#ps-ef（常用指令）。" class="headerlink" title="#ps -ef（常用指令）。"></a>#ps -ef（常用指令）。</h5><h5 id="ps-ef-grep-进程名称；筛选特定进程；"><a href="#ps-ef-grep-进程名称；筛选特定进程；" class="headerlink" title="#ps -ef | grep 进程名称；筛选特定进程；"></a>#ps -ef | grep 进程名称；筛选特定进程；</h5><p><img src="C:%5CUsers%5CSunYang%5CAppData%5CLocal%5CTemp%5CImage.png" alt="Image"></p>
-<h5 id="UID-该进程的用户ID；"><a href="#UID-该进程的用户ID；" class="headerlink" title="UID : 该进程的用户ID；"></a>UID : 该进程的用户ID；</h5><h5 id="PID-进程的ID；"><a href="#PID-进程的ID；" class="headerlink" title="PID : 进程的ID；"></a>PID : 进程的ID；</h5><h5 id="PPID：该进程的父级进程ID；（如果一个程序的父级进程找不到，该程序的进程称为僵尸进程。）"><a href="#PPID：该进程的父级进程ID；（如果一个程序的父级进程找不到，该程序的进程称为僵尸进程。）" class="headerlink" title="PPID：该进程的父级进程ID；（如果一个程序的父级进程找不到，该程序的进程称为僵尸进程。）"></a>PPID：该进程的父级进程ID；（如果一个程序的父级进程找不到，该程序的进程称为僵尸进程。）</h5><h5 id="C：CPU的占用率-百分比形式；"><a href="#C：CPU的占用率-百分比形式；" class="headerlink" title="C：CPU的占用率 百分比形式；"></a>C：CPU的占用率 百分比形式；</h5><h5 id="STIME：进程的启动时间；"><a href="#STIME：进程的启动时间；" class="headerlink" title="STIME：进程的启动时间；"></a>STIME：进程的启动时间；</h5><h5 id="TIY：终端设备，发起该进程的终端设备识别号，如果显示“？”，则表示该进程不是由终端设备发起的；"><a href="#TIY：终端设备，发起该进程的终端设备识别号，如果显示“？”，则表示该进程不是由终端设备发起的；" class="headerlink" title="TIY：终端设备，发起该进程的终端设备识别号，如果显示“？”，则表示该进程不是由终端设备发起的；"></a>TIY：终端设备，发起该进程的终端设备识别号，如果显示“？”，则表示该进程不是由终端设备发起的；</h5><h5 id="TIME：该进程的运行时间；"><a href="#TIME：该进程的运行时间；" class="headerlink" title="TIME：该进程的运行时间；"></a>TIME：该进程的运行时间；</h5><h5 id="CMD：该进程的名称或者对应的执行路径；"><a href="#CMD：该进程的名称或者对应的执行路径；" class="headerlink" title="CMD：该进程的名称或者对应的执行路径；"></a>CMD：该进程的名称或者对应的执行路径；</h5><h5 id="top-查看服务器的进程所占资源，动态显示，退出按q-或者ctrl-c；"><a href="#top-查看服务器的进程所占资源，动态显示，退出按q-或者ctrl-c；" class="headerlink" title="top 查看服务器的进程所占资源，动态显示，退出按q 或者ctrl+c；"></a>top 查看服务器的进程所占资源，动态显示，退出按q 或者ctrl+c；</h5><p><img src="C:%5CUsers%5CSunYang%5CAppData%5CLocal%5CTemp%5CImage.png" alt="Image"></p>
-<h5 id="1-20：服务器启动了多长时间。"><a href="#1-20：服务器启动了多长时间。" class="headerlink" title="1:20：服务器启动了多长时间。"></a>1:20：服务器启动了多长时间。</h5><h5 id="2users：表示有几个用户登录。"><a href="#2users：表示有几个用户登录。" class="headerlink" title="2users：表示有几个用户登录。"></a>2users：表示有几个用户登录。</h5><h5 id="load-average-：0-00-0-00-0-00-表示一分钟之内的负载情况；5分钟之内的负载情况。15之内的负载情况。"><a href="#load-average-：0-00-0-00-0-00-表示一分钟之内的负载情况；5分钟之内的负载情况。15之内的负载情况。" class="headerlink" title="load average ：0.00,0.00,0.00;表示一分钟之内的负载情况；5分钟之内的负载情况。15之内的负载情况。"></a>load average ：0.00,0.00,0.00;表示一分钟之内的负载情况；5分钟之内的负载情况。15之内的负载情况。</h5><h5 id="Task-：一共多少个进程；"><a href="#Task-：一共多少个进程；" class="headerlink" title="Task ：一共多少个进程；"></a>Task ：一共多少个进程；</h5><h5 id="1-running：表示有多少个进程在运行；"><a href="#1-running：表示有多少个进程在运行；" class="headerlink" title="1 running：表示有多少个进程在运行；"></a>1 running：表示有多少个进程在运行；</h5><h5 id="149-sleeping：表示有多少个睡眠进程；"><a href="#149-sleeping：表示有多少个睡眠进程；" class="headerlink" title="149 sleeping：表示有多少个睡眠进程；"></a>149 sleeping：表示有多少个睡眠进程；</h5><h5 id="0-stopped：多少个停止的；"><a href="#0-stopped：多少个停止的；" class="headerlink" title="0 stopped：多少个停止的；"></a>0 stopped：多少个停止的；</h5><h5 id="0-zombie：多少个僵尸进程；"><a href="#0-zombie：多少个僵尸进程；" class="headerlink" title="0 zombie：多少个僵尸进程；"></a>0 zombie：多少个僵尸进程；</h5><h5 id="PR：权重，优先级。"><a href="#PR：权重，优先级。" class="headerlink" title="PR：权重，优先级。"></a>PR：权重，优先级。</h5><h5 id="NI：用户进程空间内改变过优先级的进程占用CPU百分比。"><a href="#NI：用户进程空间内改变过优先级的进程占用CPU百分比。" class="headerlink" title="NI：用户进程空间内改变过优先级的进程占用CPU百分比。"></a>NI：用户进程空间内改变过优先级的进程占用CPU百分比。</h5><h5 id="VIRT：虚拟内存：申请了500M"><a href="#VIRT：虚拟内存：申请了500M" class="headerlink" title="VIRT：虚拟内存：申请了500M,"></a>VIRT：虚拟内存：申请了500M,</h5><h5 id="RES：常驻内存：-实际使用了350M，"><a href="#RES：常驻内存：-实际使用了350M，" class="headerlink" title="RES：常驻内存： 实际使用了350M，"></a>RES：常驻内存： 实际使用了350M，</h5><h5 id="SHR：共享内存：（和其他进程共享使用的内存）但是其中还包含了调用其他进程的开销。"><a href="#SHR：共享内存：（和其他进程共享使用的内存）但是其中还包含了调用其他进程的开销。" class="headerlink" title="SHR：共享内存：（和其他进程共享使用的内存）但是其中还包含了调用其他进程的开销。"></a>SHR：共享内存：（和其他进程共享使用的内存）但是其中还包含了调用其他进程的开销。</h5><h5 id="所以计算一个进程实际使用的内存-常驻内存（"><a href="#所以计算一个进程实际使用的内存-常驻内存（" class="headerlink" title="所以计算一个进程实际使用的内存 = 常驻内存（"></a>所以计算一个进程实际使用的内存 = 常驻内存（</h5><h5 id="：RES）-共享内存（SHR）"><a href="#：RES）-共享内存（SHR）" class="headerlink" title="：RES）-  共享内存（SHR）"></a>：RES）-  共享内存（SHR）</h5><h5 id="S：进程的状态-（睡眠状态）R：（运行状态）"><a href="#S：进程的状态-（睡眠状态）R：（运行状态）" class="headerlink" title="S：进程的状态 （睡眠状态）R：（运行状态）"></a>S：进程的状态 （睡眠状态）R：（运行状态）</h5><h5 id="cup：占用的cpu百分比；"><a href="#cup：占用的cpu百分比；" class="headerlink" title="%cup：占用的cpu百分比；"></a>%cup：占用的cpu百分比；</h5><h5 id="MEN：占用的内存百分比；"><a href="#MEN：占用的内存百分比；" class="headerlink" title="%MEN：占用的内存百分比；"></a>%MEN：占用的内存百分比；</h5><h5 id="TIME：运行时间；"><a href="#TIME：运行时间；" class="headerlink" title="TIME：运行时间；"></a>TIME：运行时间；</h5><h5 id="COMMAND：进程的名称或者路径。"><a href="#COMMAND：进程的名称或者路径。" class="headerlink" title="COMMAND：进程的名称或者路径。"></a>COMMAND：进程的名称或者路径。</h5><h5 id="快捷键：-top-M（P）-按照内存（CPU）从大到小降序排列；"><a href="#快捷键：-top-M（P）-按照内存（CPU）从大到小降序排列；" class="headerlink" title="快捷键：#top -M（P） 按照内存（CPU）从大到小降序排列；"></a>快捷键：#top -M（P） 按照内存（CPU）从大到小降序排列；</h5><h5 id="top-1-当服务器有多个CPU的时候可以使用“1”快捷键来切换是否展示显示各个CPU的详细信息。"><a href="#top-1-当服务器有多个CPU的时候可以使用“1”快捷键来切换是否展示显示各个CPU的详细信息。" class="headerlink" title="# top -1 当服务器有多个CPU的时候可以使用“1”快捷键来切换是否展示显示各个CPU的详细信息。"></a># top -1 当服务器有多个CPU的时候可以使用“1”快捷键来切换是否展示显示各个CPU的详细信息。</h5><h5 id="du-查看目录的真实大小；"><a href="#du-查看目录的真实大小；" class="headerlink" title="#du  查看目录的真实大小；"></a>#du  查看目录的真实大小；</h5><h5 id="du-s-只显示汇总的大小；"><a href="#du-s-只显示汇总的大小；" class="headerlink" title="#du -s  只显示汇总的大小；"></a>#du -s  只显示汇总的大小；</h5><h5 id="du-sh-目录路径-以较高可读性显示。"><a href="#du-sh-目录路径-以较高可读性显示。" class="headerlink" title="#du -sh 目录路径 以较高可读性显示。"></a>#du -sh 目录路径 以较高可读性显示。</h5><h5 id="find-路径范围-选项-选项的值；用于查找文件；"><a href="#find-路径范围-选项-选项的值；用于查找文件；" class="headerlink" title="#find 路径范围 选项 选项的值；用于查找文件；"></a>#find 路径范围 选项 选项的值；用于查找文件；</h5><h5 id="find-文档路径-name-文档名字-；按照文档名称进行搜索（支持模糊搜索）；"><a href="#find-文档路径-name-文档名字-；按照文档名称进行搜索（支持模糊搜索）；" class="headerlink" title="#find 文档路径  -name  文档名字 ；按照文档名称进行搜索（支持模糊搜索）；"></a>#find 文档路径  -name  文档名字 ；按照文档名称进行搜索（支持模糊搜索）；</h5><h5 id="find-文档路径-type-d或f-；-按照文档的类型进行搜索；文档类型：“-”表示文件（在使用find的时候用f来替换），“d”表示文件。"><a href="#find-文档路径-type-d或f-；-按照文档的类型进行搜索；文档类型：“-”表示文件（在使用find的时候用f来替换），“d”表示文件。" class="headerlink" title="#find 文档路径 -type d或f ；  按照文档的类型进行搜索；文档类型：“-”表示文件（在使用find的时候用f来替换），“d”表示文件。"></a>#find 文档路径 -type d或f ；  按照文档的类型进行搜索；文档类型：“-”表示文件（在使用find的时候用f来替换），“d”表示文件。</h5><h5 id="find-路径-name-conf-模糊查询名字。"><a href="#find-路径-name-conf-模糊查询名字。" class="headerlink" title="#find 路径  -name *.conf  模糊查询名字。"></a>#find 路径  -name *.conf  模糊查询名字。</h5><h5 id="service-服务名-start-stop-restart-；用于控制一些软件的服务启动、停止、和重启。"><a href="#service-服务名-start-stop-restart-；用于控制一些软件的服务启动、停止、和重启。" class="headerlink" title="#service 服务名 start/stop/restart ；用于控制一些软件的服务启动、停止、和重启。"></a>#service 服务名 start/stop/restart ；用于控制一些软件的服务启动、停止、和重启。</h5><h5 id="kill-进程PID-；杀掉进程；（配合ps一起使用）"><a href="#kill-进程PID-；杀掉进程；（配合ps一起使用）" class="headerlink" title="#kill 进程PID ；杀掉进程；（配合ps一起使用）"></a>#kill 进程PID ；杀掉进程；（配合ps一起使用）</h5><h5 id="killall-进程名称-；杀掉进程，不用配合ps，和PID。"><a href="#killall-进程名称-；杀掉进程，不用配合ps，和PID。" class="headerlink" title="#killall  进程名称 ；杀掉进程，不用配合ps，和PID。"></a>#killall  进程名称 ；杀掉进程，不用配合ps，和PID。</h5><h5 id="ifconfig-（获取网卡信息）inst-addr-就是网卡的IPV4地址。"><a href="#ifconfig-（获取网卡信息）inst-addr-就是网卡的IPV4地址。" class="headerlink" title="# ifconfig （获取网卡信息）inst addr 就是网卡的IPV4地址。"></a># ifconfig （获取网卡信息）inst addr 就是网卡的IPV4地址。</h5><h5 id="reboot-重启电脑；"><a href="#reboot-重启电脑；" class="headerlink" title="#reboot 重启电脑；"></a>#reboot 重启电脑；</h5><h5 id="reboot-w-模拟重启，你并不是真正的重启，做测试用，只想写关机开机日志。"><a href="#reboot-w-模拟重启，你并不是真正的重启，做测试用，只想写关机开机日志。" class="headerlink" title="#reboot -w 模拟重启，你并不是真正的重启，做测试用，只想写关机开机日志。"></a>#reboot -w 模拟重启，你并不是真正的重启，做测试用，只想写关机开机日志。</h5><h5 id="shutdown-关机；"><a href="#shutdown-关机；" class="headerlink" title="#shutdown 关机；"></a>#shutdown 关机；</h5><h5 id="shutdown-h-now-立即关机；"><a href="#shutdown-h-now-立即关机；" class="headerlink" title="#shutdown -h now 立即关机；"></a>#shutdown -h now 立即关机；</h5><h5 id="shutdown-h-15-25-“关机提示”-定时关机；-ctrl-c-关机取消。7-0之后用shutdown-c之-前用ctrl-c。"><a href="#shutdown-h-15-25-“关机提示”-定时关机；-ctrl-c-关机取消。7-0之后用shutdown-c之-前用ctrl-c。" class="headerlink" title="#shutdown -h 15:25 “关机提示” 定时关机； ctrl+c 关机取消。7.0之后用shutdown -c之##### 前用ctrl+c。"></a>#shutdown -h 15:25 “关机提示” 定时关机； ctrl+c 关机取消。7.0之后用shutdown -c之##### 前用ctrl+c。</h5><h5 id="init-0；-halt；-poweroff-都是关机。"><a href="#init-0；-halt；-poweroff-都是关机。" class="headerlink" title="#init 0；#halt；#poweroff 都是关机。"></a>#init 0；#halt；#poweroff 都是关机。</h5><h5 id="uptime-输出计算机的持续在线时间。"><a href="#uptime-输出计算机的持续在线时间。" class="headerlink" title="#uptime  输出计算机的持续在线时间。"></a>#uptime  输出计算机的持续在线时间。</h5><h5 id="uname-获取计算机操作系统的类型。"><a href="#uname-获取计算机操作系统的类型。" class="headerlink" title="#uname 获取计算机操作系统的类型。"></a>#uname 获取计算机操作系统的类型。</h5><h5 id="uname-a-获取计算机系统的所有信息。（类型-全部主机名-内核版本-发布时间-开源计划）"><a href="#uname-a-获取计算机系统的所有信息。（类型-全部主机名-内核版本-发布时间-开源计划）" class="headerlink" title="#uname -a 获取计算机系统的所有信息。（类型 全部主机名 内核版本 发布时间 开源计划）"></a>#uname -a 获取计算机系统的所有信息。（类型 全部主机名 内核版本 发布时间 开源计划）</h5><h5 id="netstat-tnlp-查看网络的连接状态。"><a href="#netstat-tnlp-查看网络的连接状态。" class="headerlink" title="#netstat -tnlp 查看网络的连接状态。"></a>#netstat -tnlp 查看网络的连接状态。</h5><p><img src="C:%5CUsers%5CSunYang%5CAppData%5CLocal%5CTemp%5CImage.png" alt="Image"></p>
-<h5 id="t-表示只列出tcp协议的连接；"><a href="#t-表示只列出tcp协议的连接；" class="headerlink" title="-t 表示只列出tcp协议的连接；"></a>-t 表示只列出tcp协议的连接；</h5><h5 id="Proto-Recv-：协议；"><a href="#Proto-Recv-：协议；" class="headerlink" title="Proto Recv ：协议；"></a>Proto Recv ：协议；</h5><h5 id="n-表示将地址从字母组合转化成ip地址，将协议转化成端口号。来显示输出。"><a href="#n-表示将地址从字母组合转化成ip地址，将协议转化成端口号。来显示输出。" class="headerlink" title="-n 表示将地址从字母组合转化成ip地址，将协议转化成端口号。来显示输出。"></a>-n 表示将地址从字母组合转化成ip地址，将协议转化成端口号。来显示输出。</h5><h5 id="l-表示只显示“state（状态）”列中值为LISTEN（监听）的连接。"><a href="#l-表示只显示“state（状态）”列中值为LISTEN（监听）的连接。" class="headerlink" title="-l 表示只显示“state（状态）”列中值为LISTEN（监听）的连接。"></a>-l 表示只显示“state（状态）”列中值为LISTEN（监听）的连接。</h5><h5 id="p-显示显示发起连接的进程PID和进程名称。"><a href="#p-显示显示发起连接的进程PID和进程名称。" class="headerlink" title="-p 显示显示发起连接的进程PID和进程名称。"></a>-p 显示显示发起连接的进程PID和进程名称。</h5><h5 id="man-手册。"><a href="#man-手册。" class="headerlink" title="#man 手册。"></a>#man 手册。</h5>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/17/Linux-%E5%91%BD%E4%BB%A4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Linux-文件目录结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/17/Linux-%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">Linux-文件目录结构</a>
+    <h1 class="article-title" itemprop="name">
+      Linux-文件目录结构
     </h1>
   
 
@@ -245,6 +178,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -252,16 +206,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/17/Linux-%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/17/Linux-%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/06/17/Linux-%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Linux-命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/06/17/Linux-vim/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux-vim</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -281,80 +303,14 @@
 
 
 
-
   
-    <article id="post-Linux-vim" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/17/Linux-vim/">Linux-vim</a>
-    </h1>
   
 
-        
-        <a href="/2020/06/17/Linux-vim/" class="archive-article-date">
-  	<time datetime="2020-06-17T12:25:02.414Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Vim："><a href="#Vim：" class="headerlink" title="Vim："></a>Vim：</h1><hr>
-<h3 id="Vim中存在三种模式（大众认知）："><a href="#Vim中存在三种模式（大众认知）：" class="headerlink" title="Vim中存在三种模式（大众认知）："></a>Vim中存在三种模式（大众认知）：</h3><h5 id="一：命令模式：在该模式下是不能对文件进行直接编辑的，可以输入快捷键进行一些操作（删除行，复制行，移动光标，粘贴。）（打开文件之后默认进入模式）"><a href="#一：命令模式：在该模式下是不能对文件进行直接编辑的，可以输入快捷键进行一些操作（删除行，复制行，移动光标，粘贴。）（打开文件之后默认进入模式）" class="headerlink" title="一：命令模式：在该模式下是不能对文件进行直接编辑的，可以输入快捷键进行一些操作（删除行，复制行，移动光标，粘贴。）（打开文件之后默认进入模式）"></a>一：命令模式：在该模式下是不能对文件进行直接编辑的，可以输入快捷键进行一些操作（删除行，复制行，移动光标，粘贴。）（打开文件之后默认进入模式）</h5><h5 id="二：编辑模式（输入模式）：在该模式下，可以对文件的内容进行编辑。"><a href="#二：编辑模式（输入模式）：在该模式下，可以对文件的内容进行编辑。" class="headerlink" title="二：编辑模式（输入模式）：在该模式下，可以对文件的内容进行编辑。"></a>二：编辑模式（输入模式）：在该模式下，可以对文件的内容进行编辑。</h5><h5 id="三：末行模式（尾行模式）：可以在末行输入命令来对文件进行操作（搜索-替换-保存-撤销-退出-高亮等等。-）"><a href="#三：末行模式（尾行模式）：可以在末行输入命令来对文件进行操作（搜索-替换-保存-撤销-退出-高亮等等。-）" class="headerlink" title="三：末行模式（尾行模式）：可以在末行输入命令来对文件进行操作（搜索 替换 保存 撤销 退出 高亮等等。 ）"></a>三：末行模式（尾行模式）：可以在末行输入命令来对文件进行操作（搜索 替换 保存 撤销 退出 高亮等等。 ）</h5><hr>
-<h3 id="Vim的打开文件的方式（4种）"><a href="#Vim的打开文件的方式（4种）" class="headerlink" title="Vim的打开文件的方式（4种）"></a>Vim的打开文件的方式（4种）</h3><h5 id="vim-文件路径-作用：打开指定文件"><a href="#vim-文件路径-作用：打开指定文件" class="headerlink" title="vim  + 文件路径 作用：打开指定文件"></a>vim  + 文件路径 作用：打开指定文件</h5><h5 id="vim-数字-文件路径-作用：打开指定的文件，并将光标移动到指定行。"><a href="#vim-数字-文件路径-作用：打开指定的文件，并将光标移动到指定行。" class="headerlink" title="vim +数字 文件路径 作用：打开指定的文件，并将光标移动到指定行。"></a>vim +数字 文件路径 作用：打开指定的文件，并将光标移动到指定行。</h5><h5 id="vim-关键词-文件的路径-作用：打开指定文件，并且高亮显示关键词。"><a href="#vim-关键词-文件的路径-作用：打开指定文件，并且高亮显示关键词。" class="headerlink" title="vim +/关键词 文件的路径  作用：打开指定文件，并且高亮显示关键词。"></a>vim +/关键词 文件的路径  作用：打开指定文件，并且高亮显示关键词。</h5><h5 id="vim-文件路径1-文件路径2-文件路径3-作用：同时打开多个文件。"><a href="#vim-文件路径1-文件路径2-文件路径3-作用：同时打开多个文件。" class="headerlink" title="vim 文件路径1 文件路径2 文件路径3 作用：同时打开多个文件。"></a>vim 文件路径1 文件路径2 文件路径3 作用：同时打开多个文件。</h5><hr>
-<h3 id="命令模式："><a href="#命令模式：" class="headerlink" title="命令模式："></a>命令模式：</h3><h4 id="光标移动："><a href="#光标移动：" class="headerlink" title="光标移动："></a>光标移动：</h4><h5 id="1-行首：shift-6（-）；"><a href="#1-行首：shift-6（-）；" class="headerlink" title="1.行首：shift+6（^）；"></a>1.行首：shift+6（^）；</h5><h5 id="2-行尾：shift-4（-）；"><a href="#2-行尾：shift-4（-）；" class="headerlink" title="2.行尾：shift+4（$）；"></a>2.行尾：shift+4（$）；</h5><h5 id="3-首行：-gg；"><a href="#3-首行：-gg；" class="headerlink" title="3.首行： gg；"></a>3.首行： gg；</h5><h5 id="4-末行：G；"><a href="#4-末行：G；" class="headerlink" title="4.末行：G；"></a>4.末行：G；</h5><h5 id="5-翻屏：向上翻：ctrl-b（before）（PgUp）向下翻：ctrl-f（after）-（PgDn）"><a href="#5-翻屏：向上翻：ctrl-b（before）（PgUp）向下翻：ctrl-f（after）-（PgDn）" class="headerlink" title="5.翻屏：向上翻：ctrl+b（before）（PgUp）向下翻：ctrl+f（after） （PgDn）"></a>5.翻屏：向上翻：ctrl+b（before）（PgUp）向下翻：ctrl+f（after） （PgDn）</h5><h4 id="复制操作："><a href="#复制操作：" class="headerlink" title="复制操作："></a>复制操作：</h4><h5 id="1-复制光标所在行：yy；"><a href="#1-复制光标所在行：yy；" class="headerlink" title="1.复制光标所在行：yy；"></a>1.复制光标所在行：yy；</h5><h5 id="2-粘贴：想要粘贴的地方按下p键；"><a href="#2-粘贴：想要粘贴的地方按下p键；" class="headerlink" title="2.粘贴：想要粘贴的地方按下p键；"></a>2.粘贴：想要粘贴的地方按下p键；</h5><h5 id="3-以光标所在行为准（包括光标所在行），向下复制指定的行数：数字-yy；"><a href="#3-以光标所在行为准（包括光标所在行），向下复制指定的行数：数字-yy；" class="headerlink" title="3.以光标所在行为准（包括光标所在行），向下复制指定的行数：数字 yy；"></a>3.以光标所在行为准（包括光标所在行），向下复制指定的行数：数字 yy；</h5><h5 id="4-可视化复制：ctrl-v，然后通过上下左右键选择要复制的区域。按下yy键，然后按p键粘贴；"><a href="#4-可视化复制：ctrl-v，然后通过上下左右键选择要复制的区域。按下yy键，然后按p键粘贴；" class="headerlink" title="4.可视化复制：ctrl+v，然后通过上下左右键选择要复制的区域。按下yy键，然后按p键粘贴；"></a>4.可视化复制：ctrl+v，然后通过上下左右键选择要复制的区域。按下yy键，然后按p键粘贴；</h5><h4 id="剪切删除操作："><a href="#剪切删除操作：" class="headerlink" title="剪切删除操作："></a>剪切删除操作：</h4><h5 id="1：剪切-删除：dd-如果按p就是粘贴）；"><a href="#1：剪切-删除：dd-如果按p就是粘贴）；" class="headerlink" title="1：剪切/删除：dd(如果按p就是粘贴）；"></a>1：剪切/删除：dd(如果按p就是粘贴）；</h5><h5 id="2：剪切-删除：以光标所在行为准（包括当前行），向下剪切-删除行数：数字-dd；"><a href="#2：剪切-删除：以光标所在行为准（包括当前行），向下剪切-删除行数：数字-dd；" class="headerlink" title="2：剪切/删除：以光标所在行为准（包括当前行），向下剪切/删除行数：数字 dd；"></a>2：剪切/删除：以光标所在行为准（包括当前行），向下剪切/删除行数：数字 dd；</h5><h5 id="3：删除之后该行变成空白行：D；"><a href="#3：删除之后该行变成空白行：D；" class="headerlink" title="3：删除之后该行变成空白行：D；**"></a>3：删除之后该行变成空白行：D；**</h5><p>####撤销/恢复：</p>
-<h5 id="1：shift-：（撤销）：然后输入u（undo）；"><a href="#1：shift-：（撤销）：然后输入u（undo）；" class="headerlink" title="1：shift+：（撤销）：然后输入u（undo）；"></a>1：shift+：（撤销）：然后输入u（undo）；</h5><h5 id="2：ctrl-r（恢复）-：取消之前的撤销操作；"><a href="#2：ctrl-r（恢复）-：取消之前的撤销操作；" class="headerlink" title="2：ctrl + r（恢复） ：取消之前的撤销操作；**"></a>2：ctrl + r（恢复） ：取消之前的撤销操作；**</h5><h4 id="光标的快速移动："><a href="#光标的快速移动：" class="headerlink" title="光标的快速移动："></a>光标的快速移动：</h4><h5 id="1：快速将光标移动到指定行：数字-G；"><a href="#1：快速将光标移动到指定行：数字-G；" class="headerlink" title="1：快速将光标移动到指定行：数字 G；"></a>1：快速将光标移动到指定行：数字 G；</h5><h5 id="2：以当前光标为准向上下左右移动多少行：数字-方向键；"><a href="#2：以当前光标为准向上下左右移动多少行：数字-方向键；" class="headerlink" title="2：以当前光标为准向上下左右移动多少行：数字 方向键；"></a>2：以当前光标为准向上下左右移动多少行：数字 方向键；</h5><h5 id="3：末行模式下快速移动到指定行：-shift-：然后输入数字-回车；"><a href="#3：末行模式下快速移动到指定行：-shift-：然后输入数字-回车；" class="headerlink" title="3：末行模式下快速移动到指定行： shift+：然后输入数字 回车；"></a>3：末行模式下快速移动到指定行： shift+：然后输入数字 回车；</h5><h4 id="模式切换："><a href="#模式切换：" class="headerlink" title="模式切换："></a>模式切换：</h4><p>​                                                                                                       i：在光标所在字符前插入； </p>
-<p>​                          一下Esc或两下Esc或删除；                                a：在光标所在字符后插入；</p>
-<h4 id="末行模式-lt-———————————-gt-命令模式-lt-——————————-gt-编辑模式"><a href="#末行模式-lt-———————————-gt-命令模式-lt-——————————-gt-编辑模式" class="headerlink" title="末行模式&lt;———————————-&gt;命令模式&lt;——————————-&gt;编辑模式"></a>末行模式&lt;———————————-&gt;命令模式&lt;——————————-&gt;编辑模式</h4><p>​                          shift+:或/只限于查找或搜索                                      Esc</p>
-<p>####末行模式：</p>
-<h5 id="1：保存操作：w（保存文件）；"><a href="#1：保存操作：w（保存文件）；" class="headerlink" title="1：保存操作：w（保存文件）；"></a>1：保存操作：w（保存文件）；</h5><h5 id="2：另存为：w-路径；"><a href="#2：另存为：w-路径；" class="headerlink" title="2：另存为：w 路径；"></a>2：另存为：w 路径；</h5><h5 id="3：退出：shift-：q（quit）退出文件；-4：保存并退出：-shift-：wq；"><a href="#3：退出：shift-：q（quit）退出文件；-4：保存并退出：-shift-：wq；" class="headerlink" title="3：退出：shift+：q（quit）退出文件；#####4：保存并退出：****shift+：wq；"></a>3：退出：shift+：q（quit）退出文件；#####4：保存并退出：****shift+：wq；</h5><h5 id="5：强制退出（刚才的操作不做保存）：q！（-英文感叹号）；"><a href="#5：强制退出（刚才的操作不做保存）：q！（-英文感叹号）；" class="headerlink" title="5：强制退出（刚才的操作不做保存）：q！（****英文感叹号）；"></a>5：强制退出（刚才的操作不做保存）：q！（****英文感叹号）；</h5><h5 id="6：搜索-查找：-关键词；（会高亮显示）在搜索结果中切换上一个（N）-下一个（n）结果；"><a href="#6：搜索-查找：-关键词；（会高亮显示）在搜索结果中切换上一个（N）-下一个（n）结果；" class="headerlink" title="6：搜索/查找：/关键词；（会高亮显示）在搜索结果中切换上一个（N）/下一个（n）结果；"></a>6：搜索/查找：/关键词；（会高亮显示）在搜索结果中切换上一个（N）/下一个（n）结果；</h5><h5 id="7：取消高亮显示：nohl；"><a href="#7：取消高亮显示：nohl；" class="headerlink" title="7：取消高亮显示：nohl；"></a>7：取消高亮显示：nohl；</h5><h5 id="8：调用外部命令：例如：！ls；"><a href="#8：调用外部命令：例如：！ls；" class="headerlink" title="8：调用外部命令：例如：！ls；"></a>8：调用外部命令：例如：！ls；</h5><h5 id="9：替换光标所在行的第一处符合条件的内容：shift-s-搜索的关键词-新的内容；"><a href="#9：替换光标所在行的第一处符合条件的内容：shift-s-搜索的关键词-新的内容；" class="headerlink" title="9：替换光标所在行的第一处符合条件的内容：shift+: s/搜索的关键词/新的内容；"></a>9：替换光标所在行的第一处符合条件的内容：shift+: s/搜索的关键词/新的内容；</h5><h5 id="10：替换光标所在行的全部符合条件的内容：s-搜索的关键词-新的内容-g；"><a href="#10：替换光标所在行的全部符合条件的内容：s-搜索的关键词-新的内容-g；" class="headerlink" title="10：替换光标所在行的全部符合条件的内容：s/搜索的关键词/新的内容/g；"></a>10：替换光标所在行的全部符合条件的内容：s/搜索的关键词/新的内容/g；</h5><h5 id="11：替换整个文件中每行中第一处符合条件的内容：-s-搜索的关键词-新的内容；"><a href="#11：替换整个文件中每行中第一处符合条件的内容：-s-搜索的关键词-新的内容；" class="headerlink" title="11：替换整个文件中每行中第一处符合条件的内容：%s/搜索的关键词/新的内容；"></a>11：替换整个文件中每行中第一处符合条件的内容：%s/搜索的关键词/新的内容；</h5><h5 id="12：替换整个文件中所有符合条件的内容：-s-搜索的关键词-新的内容-g；（-表示整个文件；g表示全局（global））；"><a href="#12：替换整个文件中所有符合条件的内容：-s-搜索的关键词-新的内容-g；（-表示整个文件；g表示全局（global））；" class="headerlink" title="12：替换整个文件中所有符合条件的内容：%s/搜索的关键词/新的内容/g；（%表示整个文件；g表示全局（global））；"></a>12：替换整个文件中所有符合条件的内容：%s/搜索的关键词/新的内容/g；（%表示整个文件；g表示全局（global））；</h5><h5 id="13：显示行号（只是临时显示）：shift-：set-nu（number）；如果想取消则输入：shift-：set-nonu；"><a href="#13：显示行号（只是临时显示）：shift-：set-nu（number）；如果想取消则输入：shift-：set-nonu；" class="headerlink" title="13：显示行号（只是临时显示）：shift+：set nu（number）；如果想取消则输入：shift+：set nonu；"></a>13：显示行号（只是临时显示）：shift+：set nu（number）；如果想取消则输入：shift+：set nonu；</h5><h5 id="14：使用vim同时打开多个文件，并在末行模式下进行切换文件：-15：查看当前已经打开的文件名称：shift-：files；-a-active：表示当前正在打开的文件；-：表示上一个打开的文件；"><a href="#14：使用vim同时打开多个文件，并在末行模式下进行切换文件：-15：查看当前已经打开的文件名称：shift-：files；-a-active：表示当前正在打开的文件；-：表示上一个打开的文件；" class="headerlink" title="14：使用vim同时打开多个文件，并在末行模式下进行切换文件：#####15：查看当前已经打开的文件名称：shift+：files；%a=active：表示当前正在打开的文件；#：表示上一个打开的文件；"></a>14：使用vim同时打开多个文件，并在末行模式下进行切换文件：#####15：查看当前已经打开的文件名称：shift+：files；%a=active：表示当前正在打开的文件；#：表示上一个打开的文件；</h5><h5 id="16：切换指定文件方式：如果需要指定切换文件的名称，则可以输入-Shift-：open-文件名；"><a href="#16：切换指定文件方式：如果需要指定切换文件的名称，则可以输入-Shift-：open-文件名；" class="headerlink" title="16：切换指定文件方式：如果需要指定切换文件的名称，则可以输入 Shift+：open 文件名；"></a>16：切换指定文件方式：如果需要指定切换文件的名称，则可以输入 Shift+：open 文件名；</h5><h5 id="17：切换上一个文件或下一个文件：切换到上一个文件：-Shift-：bp（back-previous）；切换到下一个文件：-Shift-：bn（back-next）；"><a href="#17：切换上一个文件或下一个文件：切换到上一个文件：-Shift-：bp（back-previous）；切换到下一个文件：-Shift-：bn（back-next）；" class="headerlink" title="17：切换上一个文件或下一个文件：切换到上一个文件： Shift+：bp（back previous）；切换到下一个文件： Shift+：bn（back next）；"></a>17：切换上一个文件或下一个文件：切换到上一个文件： Shift+：bp（back previous）；切换到下一个文件： Shift+：bn（back next）；</h5><hr>
-<h3 id="扩展功能："><a href="#扩展功能：" class="headerlink" title="扩展功能："></a>扩展功能：</h3><h4 id="控制着色显示与否？"><a href="#控制着色显示与否？" class="headerlink" title="控制着色显示与否？"></a>控制着色显示与否？</h4><h5 id="打开显示：shift-synatx-语法-on"><a href="#打开显示：shift-synatx-语法-on" class="headerlink" title="打开显示：shift+ : synatx(语法) on;"></a>打开显示：shift+ : synatx(语法) on;</h5><h5 id="关闭显示：Shift-：syntax-off"><a href="#关闭显示：Shift-：syntax-off" class="headerlink" title="关闭显示：Shift+：syntax off;"></a>关闭显示：Shift+：syntax off;</h5><h5 id="vim中计算器的使用：需要用公式的时候：进入编辑模式然后按“Ctrl-R”，然后输入“-”光标会进入最后一行，然后输入要计算的内容，按下回车。"><a href="#vim中计算器的使用：需要用公式的时候：进入编辑模式然后按“Ctrl-R”，然后输入“-”光标会进入最后一行，然后输入要计算的内容，按下回车。" class="headerlink" title="vim中计算器的使用：需要用公式的时候：进入编辑模式然后按“Ctrl+R”，然后输入“=”光标会进入最后一行，然后输入要计算的内容，按下回车。"></a>vim中计算器的使用：需要用公式的时候：进入编辑模式然后按“Ctrl+R”，然后输入“=”光标会进入最后一行，然后输入要计算的内容，按下回车。</h5><p>​                                   </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/17/Linux-vim/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
+  
 
   
+
   
 
 
@@ -377,8 +333,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
